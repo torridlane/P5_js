@@ -3,7 +3,9 @@ function setup() {
   colorMode(HSB,10);
   rectMode(CENTER);
   frameRate(6);
-  // save();
+  // save('jgs.jpg');
+
+
 }
 
 function draw() {
@@ -12,7 +14,7 @@ function draw() {
      push();
     translate(width/2,height/2);
     rotate(i)
-    glowingRect((i%24)*1.8,2,i%3*2,412);
+    glowingRect((i%4)*1.0,12,i%4*2,412);
      pop();
   }
 }
